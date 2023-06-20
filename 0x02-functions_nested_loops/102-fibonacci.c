@@ -17,7 +17,7 @@ int main(void)
 	for (i = 4; i <= 50; ++i)
 	{
 		sum = fir + sec;
-		printf("%d, ", sum);
+		printf("%d", sum);
 		if (i != 50)
 			printf(", ");
 		fir = sec;
