@@ -18,7 +18,7 @@ int main(void)
 	{
 		sum = fir + sec;
 		printf("%lu", sum);
-		if (i != 50)
+		if (i != 98)
 			printf(", ");
 		fir = sec;
 		sec = sum;

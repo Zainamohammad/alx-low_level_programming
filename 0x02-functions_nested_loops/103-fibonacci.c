@@ -2,8 +2,8 @@
 /**
  * main - entry point
  *
- * Description - a program that displays even fibonacci
- * terms which are less than 4x10^6
+ * Description - a program that displays the sum
+ * of even fibonacci terms which are less than 4x10^6
  *
  * Return: 0
  */
