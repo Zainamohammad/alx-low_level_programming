@@ -10,14 +10,14 @@
 int main(void)
 {
 	int i;
-	unsigned long int sum = 0, fir = 2, sec = 3;
+	unsigned long long int sum = 0, fir = 2, sec = 3;
 
 	for (i = 1; i < 4; ++i)
 		printf("%d, ", i);
 	for (i = 4; i <= 98; ++i)
 	{
 		sum = fir + sec;
-		printf("%lu", sum);
+		printf("%llu", sum);
 		if (i != 98)
 			printf(", ");
 		fir = sec;
