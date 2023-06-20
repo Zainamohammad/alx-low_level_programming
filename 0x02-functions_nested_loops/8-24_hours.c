@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * jack_bauer - prints every minute of the day
  * return: 0
@@ -18,20 +18,15 @@ void jack_bauer(void)
 					if ((i * 10 + j <= 23) && (m * 10 + n <= 59))
 
 					{
-						putchar(i + 48);
-						putchar(j + 48);
-						putchar(':');
-						putchar(m + 48);
-						putchar(n + 48);
-						putchar('\n');
+						_putchar(i + 48);
+						_putchar(j + 48);
+						_putchar(':');
+						_putchar(m + 48);
+						_putchar(n + 48);
+						_putchar('\n');
 					}
 				}
 			}
 		}
 	}
-}
-int main ()
-{
-    jack_bauer();
-    return (0);
 }
