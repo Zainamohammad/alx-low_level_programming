@@ -16,14 +16,13 @@ void print_times_table(int n)
 			if ((n <= 15) && (n >= 0))
 			{
 				if (times < 10 && j != 0)
-                {
-                    _putchar(' ');
+				{	_putchar(' ');
 					_putchar(' ');
-                }
-                if ((times >= 10 && times < 100) && j != 0)
-                    _putchar(' ');
+				}
 				if (times < 10)
 					_putchar(times + 48);
+				if ((times >= 10 && times < 100) && j != 0)
+					_putchar(' ');
 				if (times >= 10 && times < 100)
 				{
 					_putchar((times / 10) + 48);
@@ -39,10 +38,9 @@ void print_times_table(int n)
 				{
 					_putchar(',');
 					_putchar(' ');
-					_putchar(' ');
 				}
 			}
 		}
-        _putchar('\n');
+	_putchar('\n');
 	}
 }
