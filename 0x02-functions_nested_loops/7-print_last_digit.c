@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <limits.h>
+#include "main.h"
 /**
  * print_last_digit - function to print the last digit of a number
  * @num: a variable in which the number is stored
