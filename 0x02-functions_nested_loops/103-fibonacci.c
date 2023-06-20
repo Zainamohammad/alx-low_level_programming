@@ -9,20 +9,18 @@
  */
 int main(void)
 {
-	int i, sum, fir = 2, sec = 3;
+	int i, sum, sum2, fir = 0, sec = 1;
 
-	printf("%d, ", 2);
-	for (i = 0; sum < 4000000; ++i)
+	for (i = 1; sum < 4000000; ++i)
 	{
 		sum = fir + sec;
 		if ((sum % 2 == 0) && (sum < 4000000))
-			printf("%d", sum);
-		fir = sec;
-		sec = sum;
-		if (sum < 4000000)
-			printf(", ");
+			sum2 = sum2 + sum;
+			fir = sec;
+			sec = sum;
+		
 	}
-	printf("\n");
+	printf("%d\n", sum2);
 	return (0);
 }
 
