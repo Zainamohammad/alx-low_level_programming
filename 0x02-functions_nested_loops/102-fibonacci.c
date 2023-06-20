@@ -10,7 +10,7 @@
 int main(void)
 {
 	int i;
-	long long int sum, fir = 2, sec = 3;
+	int sum, fir = 2, sec = 3;
 
 	for (i = 1; i < 4; ++i)
 	{	printf("%d", i);
@@ -20,7 +20,7 @@ int main(void)
 	for (i = 4; i <= 50; ++i)
 	{
 		sum = fir + sec;
-		printf("%lld, ", sum);
+		printf("%d, ", sum);
 		if (i != 50)
 			printf(", ");
 		fir = sec;
