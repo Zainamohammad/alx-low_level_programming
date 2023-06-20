@@ -10,13 +10,10 @@
 int main(void)
 {
 	int i;
-	int sum, fir = 2, sec = 3;
+	int sum = 0, fir = 2, sec = 3;
 
 	for (i = 1; i < 4; ++i)
-	{	printf("%d", i);
-		if (i != 3)
-			printf(", ");
-	}
+		printf("%d, ", i);
 	for (i = 4; i <= 50; ++i)
 	{
 		sum = fir + sec;
