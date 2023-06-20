@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int i, sum, sum2, fir = 0, sec = 1;
+	int i, sum = 0, sum2 = 0, fir = 0, sec = 1;
 
 	for (i = 1; sum < 4000000; ++i)
 	{
