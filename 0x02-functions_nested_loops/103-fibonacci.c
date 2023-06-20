@@ -15,11 +15,9 @@ int main(void)
 	{
 		sum = fir + sec;
 		if ((sum % 2 == 0) && (sum < 4000000))
-		{
 			sum2 = sum2 + sum;
-			fir = sec;
-			sec = sum;
-		}
+		fir = sec;
+		sec = sum;
 	}
 	printf("%d\n", sum2);
 	return (0);
