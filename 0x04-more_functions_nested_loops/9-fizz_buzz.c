@@ -6,7 +6,7 @@
  * 1 to 100 and replacing some of the numbers with the
  * words fizz and buzz
  *
- * Return - 0
+ * Return: 0
  */
 int main(void)
 {
