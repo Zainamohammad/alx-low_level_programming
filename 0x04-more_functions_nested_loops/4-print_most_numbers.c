@@ -16,6 +16,5 @@ void print_most_numbers(void)
 			_putchar(48 + i);
 	}
 	_putchar('\n');
-	return (0);
 }
 
