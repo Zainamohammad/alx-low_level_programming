@@ -17,7 +17,8 @@ int main(void)
 	for (i = 4; i <= 98; ++i)
 	{
 		sum = fir + sec;
-		printf("%lu", sum);
+		if (sum < ULONG_MAX)
+			printf("%lu", sum);
 		if (i != 98)
 			printf(", ");
 		fir = sec;
