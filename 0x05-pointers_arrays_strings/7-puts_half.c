@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_rev - a function that prints the
+ * puts_half - a function that prints the
  * second half of a string
  *
  * @str: the string to be printed
@@ -14,11 +14,10 @@ void puts_half(char *str)
 	for (i = 0; str[i] != '\0'; ++i)
 	{
 		++count;
-  }
+	}
 	for (i = count - 1; i > count / 2 - 1; --i)
 	{
 		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
-	
