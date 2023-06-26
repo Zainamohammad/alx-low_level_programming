@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 /**
  * main - entry point
  *
@@ -10,14 +11,15 @@
 int main(void)
 {
 	int i;
-	unsigned long long int sum = 0, fir = 2, sec = 3;
+	unsigned long int sum = 0, fir = 2, sec = 3;
 
 	for (i = 1; i < 4; ++i)
 		printf("%d, ", i);
 	for (i = 4; i <= 98; ++i)
 	{
 		sum = fir + sec;
-		printf("%llu", sum);
+		if (sum < ULONG_MAX)
+			printf("%lu", sum);
 		if (i != 98)
 			printf(", ");
 		fir = sec;
