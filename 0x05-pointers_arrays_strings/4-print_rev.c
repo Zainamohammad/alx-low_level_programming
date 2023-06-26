@@ -9,7 +9,7 @@
  */
 void print_rev(char *s)
 {
-	int i, count = 0;
+	int i, count = 0, *str;
 
 	for (i = 0; *s != '\0'; ++i)
 	{
@@ -17,10 +17,10 @@ void print_rev(char *s)
 		++s;
 	}
 	--s;
-	for (i = count; i > 0; --i)
+	for (i = 1; i < count / 2; --i)
 	{
-		_putchar(*s);
-		--s;
+		str[i] = s[i];
+		s[i] = s[count - 1 - i];
+		s[count - 1 - i] = str[i];
 	}
-	_putchar('\n');
 }
