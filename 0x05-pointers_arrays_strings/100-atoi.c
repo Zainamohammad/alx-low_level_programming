@@ -9,7 +9,7 @@
  */
 int _atoi(char *s)
 {
-	int i, count = 0;
+	int i, count = 0, x;
 
 	for (i = 0; s[i] != '\0'; ++i)
 	{
@@ -21,10 +21,12 @@ int _atoi(char *s)
 		}
 	}
 	if (count == 0)
-		return (0);
+		x = 0;
 	if (count != 0)
 	{
+		x = 0;
 		for (i = 0; i < count; ++i)
-			return (s[i]);
+			x = x + (s[i]) * 10 ^ (count - i);
 	}
+	return (x);
 }
