@@ -16,7 +16,7 @@ void print_array(int *a, int n)
 	{
 		++count;
 	}
-	if (n <= count)
+	if ((n <= count) && (n > 0))
 	{
 		for (i = 0; i < n; ++i)
 		{
@@ -27,6 +27,6 @@ void print_array(int *a, int n)
 				printf("\n");
 		}
 	}
-	else if (n <= 0)
+	else
 		printf("\n");
 }
