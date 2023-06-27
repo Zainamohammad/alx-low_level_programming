@@ -26,7 +26,7 @@ int _atoi(char *s)
 	{
 		x = 0;
 		for (i = 0; i < count; ++i)
-			x = x + (s[i]) * 10 ^ (count - i);
+			x = x + (s[i]) * (10 ^ (count - i));
 	}
 	return (x);
 }
