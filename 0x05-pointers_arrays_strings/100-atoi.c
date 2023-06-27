@@ -22,8 +22,9 @@ int _atoi(char *s)
 	}
 	if (count == 0)
 		return (0);
-	else
+	if (count != 0)
 	{
-		return (s[1]);
+		for (i = 0; i < count; ++i)
+			return (s[i]);
 	}
 }
