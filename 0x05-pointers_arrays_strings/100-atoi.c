@@ -24,7 +24,6 @@ int _atoi(char *s)
 		return (0);
 	else
 	{
-		s = (int *)s;
-		return(s);
+		return (s[1]);
 	}
 }
