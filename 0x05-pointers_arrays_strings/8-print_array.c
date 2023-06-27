@@ -12,10 +12,10 @@ void print_array(int *a, int n)
 {
 	int i, count = 0;
 
-for (i = 0; s[i] != '\0'; ++i)
+for (i = 0; a[i] != '\0'; ++i)
 	{
 		++count;
-  }
+	}
 for (i = 0; i < n; ++i)
 {
 if (n <= count)
