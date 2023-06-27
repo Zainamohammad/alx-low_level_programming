@@ -11,11 +11,12 @@
 void print_array(int *a, int n)
 {
 	int i, count = 0;
+	
 	for (i = 0; a[i] != '\0'; ++i)
 	{
 		++count;
 	}
-	if (n <= count - 1)
+	if (n <= count)
 	{
 		for (i = 0; i < n; ++i)
 		{
