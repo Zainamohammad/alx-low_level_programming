@@ -14,14 +14,17 @@ int _atoi(char *s)
 	for (i = 0; s[i] != '\0'; ++i)
 	{
 		++count;
-    if (sizeof(s[i]) < 4)
-    {
-      s[i + 1] = s[i];
-      --count;
-    }
-  }
-  if (count = 0)
-    return (0);
-  else
-    return(s);
+		if (sizeof(s[i]) < 4)
+		{
+			s[i + 1] = s[i];
+			--count;
+		}
+	}
+	if (count == 0)
+		return (0);
+	else
+	{
+		s = (int *)s;
+		return(s);
+	}
 }
