@@ -10,20 +10,20 @@
  */
 void print_number(int n)
 {
-	int count = 0, arr[MAX], q, i;
+	int count = 0, arr[MAX], i, q, num = n;
 
-	if (n == 0)
+	if (num == 0)
 		_putchar(48);
-	while (n != 0)
+	while (num != 0)
 	{
-		if (n < 0)
+		if (num < 0)
 		{
 			_putchar('-');
-			n = -1 * (n);
+			num = -1 * (num);
 		}
-		q = n % 10;
+		q = num % 10;
 		arr[count] = q;
-		n = n / 10;
+		num = num / 10;
 		count++;
 	}
 	for (i = count - 1; i >= 0; i--)
