@@ -24,8 +24,6 @@ char *_strncat(char *dest, char *src, int n)
 		if (j >= length)
 			break;
 	}
-	/*if (n >= length)
-		total = count + length;*/
 	dest[total] = '\0';
 	return (dest);
 }
