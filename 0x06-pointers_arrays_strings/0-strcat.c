@@ -6,7 +6,7 @@
  * @src: a pointer to the string to be appendded
  * to the destination one
  *
- * return: a pointer to the destination string
+ * Return: (dest) the pointer to the destination string
  */
 char *_strcat(char *dest, char *src)
 {
@@ -17,8 +17,8 @@ char *_strcat(char *dest, char *src)
 	for (j = 0; src[j] != '\0'; ++j)
 		++length;
 	total = count + length;
-	for (i = count, j = 0; j < length; ++i, ++j)
+	for (i = count, j = 0; i <= total; ++i, ++j)
 		dest[i] = src[j];
-	dest[total] = '\0';
+	/*dest[total] = '\0';*/
 	return (dest);
 }
