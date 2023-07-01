@@ -12,18 +12,33 @@ int main(void)
 {
 	int i;
 	unsigned long int sum = 0, fir = 2, sec = 3;
+	unsigned long int f1, f2, rem1, rem2, sumf, sumrem;
 
 	for (i = 1; i < 4; ++i)
 		printf("%d, ", i);
-	for (i = 4; i <= 98; ++i)
+	for (i = 4; i <= 92; ++i)
 	{
 		sum = fir + sec;
-		if (sum < ULONG_MAX)
-			printf("%lu", sum);
-		if (i != 98)
-			printf(", ");
+		printf("%lu", sum);
+		printf(", ");
 		fir = sec;
 		sec = sum;
+	}
+	f1 = fir / (10 ^ 10);
+	f2 = sec / (10 ^ 10);
+	rem1 = fir % (10 ^ 10);
+	rem2 = sec % (10 ^ 10);
+	for (i = 93; i <= 98; ++i)
+	{
+		sumf = f1 + f2;
+		sumrem = rem1 + rem2;
+		printf("%lu%lu", sumf, sumrem);
+		if (i != 98)
+			printf(", ");
+		f1 = f2;
+		f2 = sumf;
+		rem1 = rem2;
+		rem2 = sumrem;
 	}
 	printf("\n");
 	return (0);
