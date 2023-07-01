@@ -10,8 +10,8 @@
  */
 void print_number(int n)
 {
-	int count = 0, arr[MAX], i;
-	unsigned int q, num;
+	int count = 0, i;
+	unsigned int arr[MAX], q, num;
 
 	num = n;
 	if (num == 0)
