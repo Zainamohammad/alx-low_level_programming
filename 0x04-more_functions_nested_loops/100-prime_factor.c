@@ -10,7 +10,7 @@
  */
 int main(void)
 {
-  int i, arr[MAX], j, k = 0;
+  unsigned int i, arr[MAX], j, k = 0;
 
   for (i = 2; i < 612852475143; ++i)
 {
@@ -24,7 +24,7 @@ arr[k] = i;
 ++k;
 }
 else
-  countinue;
+  continue;
 }
 }
 }
