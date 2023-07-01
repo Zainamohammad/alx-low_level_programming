@@ -14,11 +14,11 @@ void print_number(int n)
 	unsigned int q, num;
 
 	num = (unsigned)(n);
-	if (num == 0)
+	if (n == 0)
 		_putchar(48);
-	while (num != 0)
+	while (n != 0)
 	{
-		if (num < 0)
+		if (n < 0)
 		{
 			_putchar('-');
 			num = (unsigned)(-n);
