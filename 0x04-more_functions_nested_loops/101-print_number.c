@@ -16,15 +16,14 @@ void print_number(int n)
 	if (n == 0)
 		_putchar(48);
 	if (n < 0)
-		{
-			_putchar('-');
-			num = (unsigned)(-n);
-		}
+	{
+		_putchar('-');
+		num = (unsigned int)(-n);
+	}
 	else
-		num = (unsigned)n;
+		num = (unsigned int)n;
 	while (num != 0)
 	{
-		
 		q = num % 10;
 		arr[count] = q;
 		num = num / 10;
