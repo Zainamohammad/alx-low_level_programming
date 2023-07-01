@@ -16,13 +16,16 @@ void print_number(int n)
 	num = (unsigned)(n);
 	if (n == 0)
 		_putchar(48);
-	while (n != 0)
-	{
-		if (n < 0)
+	if (n < 0)
 		{
 			_putchar('-');
 			num = (unsigned)(-n);
 		}
+	else
+		num = (unsigned)n;
+	while (num != 0)
+	{
+		
 		q = num % 10;
 		arr[count] = q;
 		num = num / 10;
