@@ -1,5 +1,5 @@
 #include "main.h"
-#define MAX 19
+#define MAX 25
 /**
  * print_number - a function that prints a number
  * using _putchar only
@@ -10,8 +10,10 @@
  */
 void print_number(int n)
 {
-	int count = 0, arr[MAX], i, q, num = n;
+	int count = 0, arr[MAX], i;
+	unsigned int q, num;
 
+	num = n;
 	if (num == 0)
 		_putchar(48);
 	while (num != 0)
