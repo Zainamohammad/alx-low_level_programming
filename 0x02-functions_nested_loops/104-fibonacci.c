@@ -24,14 +24,19 @@ int main(void)
 		fir = sec;
 		sec = sum;
 	}
-	f1 = fir / 1000000000000;
-	f2 = sec / 1000000000000;
-	rem1 = fir % 1000000000000;
-	rem2 = sec % 1000000000000;
+	f1 = fir / 10000000000;
+	f2 = sec / 10000000000;
+	rem1 = fir % 10000000000;
+	rem2 = sec % 10000000000;
 	for (i = 93; i <= 98; ++i)
 	{
 		sumf = f1 + f2;
 		sumrem = rem1 + rem2;
+		if (sumrem > 9999999999)
+		{
+			sumrem = sumrem % 10000000000;
+			sumf = sumf + 1;
+		}
 		printf("%lu%lu", sumf, sumrem);
 		if (i != 98)
 			printf(", ");
