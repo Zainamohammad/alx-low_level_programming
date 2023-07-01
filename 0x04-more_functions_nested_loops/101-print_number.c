@@ -10,10 +10,10 @@
  */
 void print_number(int n)
 {
-	int count = 0, i;
-	unsigned int arr[MAX], q, num;
+	int count = 0, i, arr[MAX];
+	unsigned int q, num;
 
-	num = n;
+	num = (unsigned)(n);
 	if (num == 0)
 		_putchar(48);
 	while (num != 0)
@@ -21,7 +21,7 @@ void print_number(int n)
 		if (num < 0)
 		{
 			_putchar('-');
-			num = -1 * (num);
+			num = (unsigned)(-n);
 		}
 		q = num % 10;
 		arr[count] = q;
