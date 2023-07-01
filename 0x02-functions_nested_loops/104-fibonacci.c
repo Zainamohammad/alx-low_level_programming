@@ -24,10 +24,10 @@ int main(void)
 		fir = sec;
 		sec = sum;
 	}
-	f1 = fir / (10 ^ 10);
-	f2 = sec / (10 ^ 10);
-	rem1 = fir % (10 ^ 10);
-	rem2 = sec % (10 ^ 10);
+	f1 = fir / (10 ** 10);
+	f2 = sec / (10 ** 10);
+	rem1 = fir % (10 ** 10);
+	rem2 = sec % (10 ** 10);
 	for (i = 93; i <= 98; ++i)
 	{
 		sumf = f1 + f2;
