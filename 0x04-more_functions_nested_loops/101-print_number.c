@@ -13,7 +13,6 @@ void print_number(int n)
 	int count = 0, i, arr[MAX];
 	unsigned int q, num;
 
-	num = (unsigned)(n);
 	if (n == 0)
 		_putchar(48);
 	if (n < 0)
