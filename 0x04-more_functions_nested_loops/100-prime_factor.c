@@ -11,7 +11,7 @@
  */
 int main(void)
 {
-	unsigned long int i, arr[MAX], array[MAX], m, j, k = 0;
+	unsigned long int i, arr[MAX], array[MAX], m = 0, j, k = 0;
 
 	for (i = 2; i < 612852475143; ++i)
 	{
