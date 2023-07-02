@@ -36,7 +36,7 @@ int main(void)
 			++m;
 		}
 	}
-	printf("lu\n", array[m]):
+	printf("lu\n", array[m]);
 
 	return (0);
 }
