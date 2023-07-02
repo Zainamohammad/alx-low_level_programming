@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define MAX 100000000000
+#define MAX 1000000
 
 /**
  * main - Entry point
@@ -16,7 +16,7 @@ int main(void)
 
 	for (i = 2; i < num; ++i)
 	{
-		for (j = 2; j < i; ++j)
+		for (j = 2; j <= i; ++j)
 		{
 			if (i % j == 0)
 				break;
