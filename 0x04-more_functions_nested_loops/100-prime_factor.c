@@ -17,9 +17,11 @@ int main(void)
 	{
 		for (j = 2; j < 612852475143; ++j)
 		{
-			if (i > j)
+			if (i >= j)
 			{
-				if (i % j != 0)
+				if (i % j == 0)
+					break;
+				if (i == j)
 				{
 					arr[k] = i;
 					++k;
