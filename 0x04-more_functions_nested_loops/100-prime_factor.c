@@ -28,7 +28,7 @@ int main(void)
 		}
 	}
 
-	for (i = 0; i <= k; ++i)
+	for (i = 0; i < k; ++i)
 	{
 		while (612852475143 % arr[i] == 0)
 		{
@@ -36,7 +36,7 @@ int main(void)
 			++m;
 		}
 	}
-	printf("%lu", array[m - 1]);
+	printf("%lu\n", array[m - 1]);
 
 	return (0);
 }
