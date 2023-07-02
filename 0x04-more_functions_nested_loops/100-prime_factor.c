@@ -12,7 +12,7 @@
 int main(void)
 {
 	unsigned long int i, arr[MAX], array[MAX], m = 0, j, k = 0;
-	unsigned int num = 612852475143;
+	unsigned long int num = 612852475143;
 
 	for (i = 2; i < num; ++i)
 	{
