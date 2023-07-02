@@ -11,7 +11,7 @@
  */
 int main(void)
 {
-	unsigned long int i, arr[MAX], j, k = 0;
+	unsigned long int i, arr[MAX], array[MAX], m, j, k = 0;
 
 	for (i = 2; i < 612852475143; ++i)
 	{
@@ -24,8 +24,6 @@ int main(void)
 					arr[k] = i;
 					++k;
 				}
-				else
-					continue;
 			}
 		}
 	}
@@ -33,8 +31,12 @@ int main(void)
 	for (i = 0; i <= k; ++i)
 	{
 		while (612852475143 % arr[i] == 0)
-			printf("%lu\n", arr[i]);
+		{
+			array[m] = arr[i];
+			++m;
+		}
 	}
+	printf("lu\n", array[m]):
 
 	return (0);
 }
