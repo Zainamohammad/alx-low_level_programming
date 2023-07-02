@@ -12,8 +12,9 @@
 int main(void)
 {
 	unsigned long int i, arr[MAX], array[MAX], m = 0, j, k = 0;
+	unsigned int num = 612852475143;
 
-	for (i = 2; i < 612852475143; ++i)
+	for (i = 2; i < num; ++i)
 	{
 		for (j = 2; j <= i; ++j)
 		{
@@ -29,9 +30,10 @@ int main(void)
 
 	for (i = 0; i < k; ++i)
 	{
-		while (612852475143 % arr[i] == 0)
+		while (num % arr[i] == 0)
 		{
 			array[m] = arr[i];
+			num = num / arr[i];
 			++m;
 		}
 	}
