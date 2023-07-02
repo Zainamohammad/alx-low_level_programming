@@ -28,5 +28,11 @@ else
 }
 }
 }
+  for (i = 0; i <= k; ++i)
+    {
+      while (612852475143 % a[i] == 0)
+        printf("%lu\n", a[i]);
+    }
+  return (0);
 }
 
