@@ -4,7 +4,6 @@
  *
  * @s: a pointer to the string
  * @accept: a pointer to the
- * @n: number of bytes of memory area to be copied
  *
  * Return: a pointer to the memory area (dest)
  */
