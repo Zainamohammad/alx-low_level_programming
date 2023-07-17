@@ -1,4 +1,5 @@
-#include <stdio.h>
+#ifndef MY_HEADER
+#define MY_HEADER
 /**
  * struct dog - a struct for a dog
  *
@@ -15,3 +16,4 @@ struct dog
 	float age;
 	char *owner;
 };
+#endif
