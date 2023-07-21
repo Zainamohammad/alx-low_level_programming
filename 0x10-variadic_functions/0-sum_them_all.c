@@ -13,6 +13,7 @@ int sum_them_all(const unsigned int n, ...)
 	unsigned int i;
 
 	va_list pars;
+
 	va_start(pars, n);
 
 	if (n > 0)
@@ -23,7 +24,8 @@ int sum_them_all(const unsigned int n, ...)
 			sum = sum + x;
 		}
 		return (sum);
-	}	
+	}
 	va_end(pars);
+
 	return (0);
 }
