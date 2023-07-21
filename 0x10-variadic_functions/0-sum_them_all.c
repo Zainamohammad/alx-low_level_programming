@@ -11,9 +11,10 @@ int sum_them_all(const unsigned int n, ...)
 {
 	int sum = 0, x;
 	unsigned int i;
-	
+
 	va_list pars;
 	va_start(pars, n);
+
 	if (n > 0)
 	{
 		for (i = 0; i < n; ++i)
@@ -22,7 +23,7 @@ int sum_them_all(const unsigned int n, ...)
 			sum = sum + x;
 		}
 		return (sum);
-	}		
+	}	
 	va_end(pars);
 	return (0);
 }
