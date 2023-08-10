@@ -1,4 +1,23 @@
 #include "main.h"
+#include "main.h"
+/**
+ * _memcpy - function to copy n bytes from a memory
+ * area to another
+ *
+ * @src: a pointer to the memory area to be copied
+ * @dest: a pointer to the destination memory area
+ * @n: number of bytes of memory area to be copied
+ *
+ * Return: a pointer to the memory area (dest)
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; ++i)
+		dest[i] = src[i];
+	return (dest);
+}
 /**
  * _realloc - a function that reallocates a memory block
  * using malloc and free
@@ -37,9 +56,9 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (ptr2 == NULL)
 		return (NULL);
 	if (new_size > old_size)
-		memcpy(ptr2, ptr, old_size);
+		_memcpy(ptr2, ptr, old_size);
 	if (old_size > new_size)
-		memcpy(ptr2, ptr, new_size);
+		_memcpy(ptr2, ptr, new_size);
 	return (ptr2);
 }
 
