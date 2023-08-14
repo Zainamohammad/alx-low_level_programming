@@ -41,29 +41,27 @@ char *_strdup(char *str)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dogcopy;
+	dog_t *doggy;
 
 	if (name == NULL || owner == NULL || age < 0)
 		return (NULL);
-	dogcopy = malloc(sizeof(dog_t));
-	if (dogcopy == NULL)
+	doggy = malloc(sizeof(dog_t));
+	if (doggy == NULL)
 		return ('\0');
-	dogcopy->name = _strdup(name);
-	if (dogcopy->name == NULL)
+	if (_strdup(name) == NULL)
 	{
-		free(dogcopy);
-		free(dup);
+		free(doggy);
 		return ('\0');
 	}
-	dogcopy->age = age;
-	dogcopy->owner = _strdup(owner);
-	if (dogcopy->owner == NULL)
+	doggy->name = _strdup(name);
+	doggy->age = age;
+	if (_strdup(owner)== NULL)
 	{
-		free(dogcopy->name);
-		free(dogcopy);
-		free(dup);
+		free(doggy->name);
+		free(doggy);
 		return ('\0');
 	}
-	return (dogcopy);
+	doggy->owner = _strdup(owner);
+	return (doggy);
 }
 
