@@ -22,7 +22,7 @@ char *_strdup(char *str)
 		return ('\0');
 	for (i = 0; str[i] != '\0'; ++i)
 		++count;
-	dup = malloc(1 + sizeof(char) * count);
+	dup = malloc(sizeof(char) * (count + 1));
 	if (dup == NULL)
 		return ('\0');
 	for (i = 0; str[i] != '\0'; ++i)
@@ -52,6 +52,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dogcopy->name == NULL)
 	{
 		free(dogcopy);
+		free(dup);
 		return ('\0');
 	}
 	dogcopy->age = age;
@@ -60,6 +61,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		free(dogcopy->name);
 		free(dogcopy);
+		free(dup);
 		return ('\0');
 	}
 	return (dogcopy);
