@@ -1,7 +1,5 @@
 #include "dog.h"
 #include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 /**
  * _strdup - a function that returns a pointer to a newly
  * allocated space in memory, which contains a copy
@@ -48,19 +46,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 	doggy = malloc(sizeof(dog_t));
 	if (doggy == NULL)
 		return ('\0');
-	if (_strdup(name) == NULL)
+	if (_strdup(name) == NULL || _strdup(owner) == NULL)
 	{
 		free(doggy);
 		return ('\0');
 	}
 	doggy->name = _strdup(name);
 	doggy->age = age;
-	if (_strdup(owner) == NULL)
-	{
-		free(doggy->name);
-		free(doggy);
-		return ('\0');
-	}
 	doggy->owner = _strdup(owner);
 	return (doggy);
 }
