@@ -47,7 +47,7 @@ void print_string(va_list args)
 	i = va_arg(args, char *);
 	if (i == NULL)
 	{
-		printf("nil");
+		printf("(nil)");
 		return;
 	}
 	printf("%s", i);
@@ -72,10 +72,10 @@ void print_all(const char * const format, ...)
 
 	va_start(arg, format);
 
-	while (format && format[i])
+	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
-		while (j < 4 && (format[i] != *(select_function[j].x)))
+		while (j < 4 && (format[i] != *select_function[j].x))
 			++j;
 		if (j < 4)
 		{
