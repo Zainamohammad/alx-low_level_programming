@@ -72,7 +72,7 @@ void print_all(const char * const format, ...)
 
 	va_start(arg, format);
 
-	while (format != NULL && format[i])
+	while (format && format[i])
 	{
 		j = 0;
 		while (j < 4 && (format[i] != *(select_function[j].x)))
