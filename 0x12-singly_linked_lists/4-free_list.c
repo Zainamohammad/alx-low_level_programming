@@ -6,12 +6,13 @@
  */
 void free_list(list_t *head)
 {
-	list_t *pn = head;
+	list_t *pn;
 
-	for (; pn != NULL;)
+	for (; head != NULL;)
 	{
-		pn = pn->next;
-		free(head);
-		head = pn;
+		pn = head;
+		head = head->next;
+		free(pn);
 	}
+
 }
