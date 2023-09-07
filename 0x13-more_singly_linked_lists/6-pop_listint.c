@@ -14,12 +14,9 @@ int pop_listint(listint_t **head)
 
 	if (*head == NULL)
 		return (0);
-	pn = malloc(sizeof(listint_t));
-	if (pn == NULL)
-		return ('\0');
-	n = (*head)->n;
 	pn = *head;
 	*head = (*head)->next;
+	n = pn->n;
 	free(pn);
 	return (n);
 }
