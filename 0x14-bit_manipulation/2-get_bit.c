@@ -11,7 +11,7 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int b, q;
-	int i, j;
+	unsigned int i, j;
 	int arr[64];
 
 	b = n;
