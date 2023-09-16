@@ -10,7 +10,7 @@
  */
 int main(int argc, char **argv)
 {
-	int fd = open(argv[1], O_RDWR), fd2 = creat(argv[2], 0664);
+	int fd = open(argv[1], O_RDONLY), fd2 = creat(argv[2], 0664);
 	ssize_t rcheck, wcheck;
 	char buffer[1024];
 
